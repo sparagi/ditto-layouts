@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "BEL 1/9/2005 22:48",
+	"super" : "Object",
+	"category" : "Morphic-Layouts-Elliptical",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"a",
+		"b",
+		"center",
+		"aDirection"
+	],
+	"name" : "Ellipse",
+	"type" : "normal"
+}

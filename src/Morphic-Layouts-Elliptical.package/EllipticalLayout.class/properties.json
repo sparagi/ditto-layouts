@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "LayoutPolicy",
+	"category" : "Morphic-Layouts-Elliptical",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ellipse",
+		"ellipseSpacing",
+		"startAtTop",
+		"clockwiseTheta",
+		"counterclockwiseTheta",
+		"clockwiseMorph",
+		"counterclockwiseMorph",
+		"nextPlacement",
+		"deltaTheta",
+		"centerBounds"
+	],
+	"name" : "EllipticalLayout",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TableLayoutProperties",
+	"category" : "Morphic-Layouts-Grid",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rowCount",
+		"columnCount"
+	],
+	"name" : "GridLayoutProperties",
+	"type" : "normal"
+}
