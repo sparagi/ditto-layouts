@@ -5,6 +5,6 @@ cacheCountsHorizontal: horizontal
 	| realRowCount realColumnCount |
 	realRowCount _ properties rowCount.
 	realColumnCount _ properties columnCount.
-	(realRowCount isNil and: [realColumnCount isNil]) ifFalse: [
+	(realRowCount isNil or: [realColumnCount isNil]) ifFalse: [
 		rowCount _ realRowCount.
 		columnCount _ realColumnCount].

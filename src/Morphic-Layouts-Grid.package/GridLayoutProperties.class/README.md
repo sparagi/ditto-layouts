@@ -1,0 +1,1 @@
+My instances contain properties necessary for instances of GridLayout.

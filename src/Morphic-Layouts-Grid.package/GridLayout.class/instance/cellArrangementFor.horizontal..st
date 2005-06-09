@@ -12,6 +12,7 @@ cellArrangementFor: aMorph horizontal: horizontal
 		column _ index x.
 		row _ index y.
 		submorph _ submorphs at: linearIndex.
+		submorph fullBounds.
 		
 		currentColumnMax _ columnWidth at: column.
 		currentColumnMax ifNil: [currentColumnMax _ 0].
