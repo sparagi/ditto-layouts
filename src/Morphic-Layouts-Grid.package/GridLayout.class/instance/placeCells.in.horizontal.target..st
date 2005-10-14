@@ -23,6 +23,7 @@ placeCells: arrangement in: newBounds horizontal: aBool target: aMorph
 				xInset _ yInset.
 				yInset _ tmp ]]
 		ifNil: [
+			inset _ Rectangle origin: 0@0 corner: 0@0.
 			xInset _ 0@0.
 			yInset _ 0@0].
 
