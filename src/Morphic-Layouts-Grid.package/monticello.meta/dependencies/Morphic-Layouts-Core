@@ -1,0 +1,1 @@
+(name 'Morphic-Layouts-Core-BEL.1' message 'Optimizes Morph>>adjustLayoutBounds when hResizing and vResizing are both #shrinkWrap.' id '6fb0352b-1d4b-9945-ab71-3ff2682770d7' date '14 October 2005' time '7:20:29 pm' author 'BEL' ancestors () stepChildren ())
