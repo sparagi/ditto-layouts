@@ -7,20 +7,19 @@ cellArrangementFor: aMorph horizontal: horizontal
 	rowHeight _ Array new: rowCount.
 	columnWidth _ Array new: columnCount.
 
-	1 to: submorphs size do: [:linearIndex | | index row column submorph currentColumnMax currentRowMax | 
+	1 to: submorphs size do: [:linearIndex | | index row column optimalExtent currentColumnMax currentRowMax | 
 		index _ self gridSquareFromIndex: linearIndex horizontal: horizontal.
 		column _ index x.
 		row _ index y.
-		submorph _ submorphs at: linearIndex.
-		submorph fullBounds.
+		optimalExtent := (submorphs at: linearIndex) optimalExtent.
 		
 		currentColumnMax _ columnWidth at: column.
 		currentColumnMax ifNil: [currentColumnMax _ 0].
 		currentRowMax _ rowHeight at: row.
 		currentRowMax ifNil: [currentRowMax _ 0].
 		
-		columnWidth at: column put: (currentColumnMax max: submorph width).
-		rowHeight at: row put: (currentRowMax max: submorph height)].
+		columnWidth at: column put: (currentColumnMax max: optimalExtent x).
+		rowHeight at: row put: (currentRowMax max: optimalExtent y)].
 	
 	output _ WriteStream on: Array new.
 	1 to: submorphs size do: [:linearIndex | | index row column cell |
